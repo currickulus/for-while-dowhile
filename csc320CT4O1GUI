@@ -1,0 +1,41 @@
+package csc320ct4option1;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class csc320CT4O1GUI {
+    public static void main(String[] args) {
+        double sum;
+        double avg;
+        double intr;
+
+        double userinput1;
+        double userinput2;
+        double userinput3;
+        double userinput4;
+        double userinput5;
+        int i =1;
+        do {
+            userinput1 = Double.parseDouble(JOptionPane.showInputDialog("Enter an integer "));
+            userinput2 = Double.parseDouble(JOptionPane.showInputDialog("Enter an integer "));
+            userinput3 = Double.parseDouble(JOptionPane.showInputDialog("Enter an integer "));
+            userinput4 = Double.parseDouble(JOptionPane.showInputDialog("Enter an integer "));
+            userinput5 = Double.parseDouble(JOptionPane.showInputDialog("Enter an integer "));
+            sum = userinput1 + userinput2 + userinput3 + userinput4 + userinput5;
+            avg = sum / 3;
+            intr = sum *.2;
+            double list[] = {userinput2,userinput3,userinput1,userinput4,userinput5};
+            Arrays.sort(list);
+            JOptionPane.showMessageDialog(null, "The minimum is: " + "min " + list[0]);
+            JOptionPane.showMessageDialog(null, "The maximum is: " + "max " + list[4]);
+            JOptionPane.showMessageDialog(null, "The sum is: " + sum);
+            JOptionPane.showMessageDialog(null, "The average is: " + avg);
+            JOptionPane.showMessageDialog(null, "The interest is: " + intr);
+            i++;
+        }
+        while(i<3);
+
+        }
+    }
