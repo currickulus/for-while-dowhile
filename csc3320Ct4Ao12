@@ -1,0 +1,41 @@
+package csc320ct4option1;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+
+public class csc3320Ct4Ao12 {
+    public static void main(String[] args) {
+
+        double sum;
+        double avg;
+        double intr;
+        int i = 1;
+        do {
+            System.out.println("enter an integer");
+            double a = new Scanner(System.in).nextDouble();
+            System.out.print("Enter an integer: ");
+            double b = new Scanner(System.in).nextDouble();
+            System.out.print("Enter an integer: ");
+            double c = new Scanner(System.in).nextDouble();
+            System.out.print("Enter an integer: ");
+            double d = new Scanner(System.in).nextDouble();
+            System.out.print("Enter an integer: ");
+            double e = new Scanner(System.in).nextDouble();
+            double list[] = {a, b, c, d, e};
+            Arrays.sort(list);
+            sum = a + b + c + d + e;
+            avg = sum / 5;
+            intr = sum * .2;
+            System.out.println("The sum is: " + sum);
+            System.out.println("The average is: " + avg);
+            System.out.println("The minimum is: " + "min " + list[0]);
+            System.out.println("The maximum is: " + "max " + list[4]);
+            System.out.println("The intrest on the total is: " + intr);
+            i++;
+        }
+            while (i < 10) ;
+        }
+
+    }
