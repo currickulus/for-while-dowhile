@@ -1,0 +1,13 @@
+import javax.swing.*;
+
+public class sixteenths {
+    public static void main(String[] args) {
+        StringBuilder output = new StringBuilder();
+
+        for (double i = 1; i < 17; i++) {
+            output.append(i).append("/16 = ").append(i / 16).append("\n");
+        }
+
+        JOptionPane.showMessageDialog(null, output.toString());
+    }
+}
